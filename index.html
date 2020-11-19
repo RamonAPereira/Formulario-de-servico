@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Formulario de Feedback</h1>
+    <p id="description">Obrigado por  oferecer a sua opinião, isso nos ajuda a melhorar a plataforma</p>
+    
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Nome</label><br>
+        <input type="text" name="name" id="name" placeholder="Digite seu nome" required><br>
+
+        <label id="email-label" for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Digite seu Email" required><br>
+
+        <label id="number-label" for="number">Idade <span>(opicional)</span></label><br>
+        <input type="number" min="10" max="99" id="number" name="number" placeholder="Idade"><br>
+
+        <p> Qual opção melhor descreve melhor a sua situação</p><br>
+        <select name="dropdown" id="dropdown" required>
+            <option value="role">Escolha a situação</option>
+            <option value="student">Estudante</option>
+            <option value="full-time-job">Trabalho em tempo integral</option>
+            <option value="full-time-learner">Aprendiz em tempo integral</option>
+            <option value="secret">Prefere não falar</option>
+            <option value="Other">Outro</option>
+        </select>
+
+        <p>Você recomendaria nosso produto para um amigo?</p>
+        <input type="radio" name="role" id="definitely" value="definitely" checked><label for="definitely">Definitely</label><br>
+        <input type="radio" name="role" id="maybe" value="maybe"><label for="maybe">Maybe</label><br>
+        <input type="radio" name="role" id="not-sure" value="maybe"><label for="not-sure">Não tenho certeza</label><br>
+        
+        <p>Qual o destaque do nosso produto para você</p><br>
+        <select name="feature" id="feature" required>
+            <option value="option">Escolha uma opção</option>
+            <option value="student">velocidade</option>
+            <option value="full-time-job">Manutenção</option>
+            <option value="full-time-learner">Outro</option>
+        </select>
+
+        <p>O que você gostaria que melhora-se? <span>(marque todas as opções que se aplicarem)</span></p>
+        <input type="checkbox" name="prefer" id="front-end" value="front-end"> <label for="front-end">Projetos Front-end</label><br>
+        <input type="checkbox" name="prefer" id="back-end" value="back-end"><label for="back-end">Projetos Back-end</label><br>
+        <input type="checkbox" name="prefer" id="challenges" value="challenges"><label for="challenges">Desafios</label><br>
+        <input type="checkbox" name="prefer" id="open-source" value="open-source"><label for="open-source">Projetos Open Source</label><br>
+        <input type="checkbox" name="prefer" id="help" value="help"><label for="help">Salas de ajuda</label><br>
+        <input type="checkbox" name="prefer" id="videos" value="videos"><label for="videos">Videos</label><br>
+        <input type="checkbox" name="prefer" id="meetups" value="meetups"><label for="meetups">encontros presenciais</label><br>
+        <input type="checkbox" name="prefer" id="wiki" value="wiki"><label for="wiki">Wiki</label><br>
+        <input type="checkbox" name="prefer" id="forum" value="forum"><label for="forum">Forum</label><br>
+        <input type="checkbox" name="prefer" id="aditional-courses" value="aditional-courses"><label for="aditional-courses">Cursos adicionais</label>
+
+        <p>Algum comentario ou sugestão?</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <button type="submit" id="submit">Enviar</button>
+    </form>
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
