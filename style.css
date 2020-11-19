@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+:root {
+  font-family: "Noto Sans", sans-serif;
+  --color-darkblue: rgb(8, 14, 44, 0.8);
+  --color-white: #ecf4f1;
+  font-size: 20px;
+}
+
+header {
+  text-align: center;
+}
+header #description {
+  font-style: italic;
+}
+.container {
+  margin-left: 16rem;
+  width: 50vw;
+  background-color: var(--color-darkblue);
+}
+.container form {
+  color: var(--color-white);
+  margin-left: 1rem;
+}
+form .phrase {
+  width: 32rem;
+  height: 1.2rem;
+}
